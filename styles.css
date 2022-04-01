@@ -1,25 +1,16 @@
 body{
     font-family: 'Red Hat Mono', monospace;
     background-color: black;
-    overflow-x: hidden;
-}
-html{
+    overflow-x:hidden;
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 }
 
 .home-section,
 .aboutme-section,
 .skills-section,
-.projects-section{
-    height: 100vh;
-    border: 1px solid black;
-    scroll-snap-align: center;
-}
-
+.projects-section,
 .contact-section{
-    height: 80vh;
-    scroll-snap-align: start;
+    height: 100vh;
 
 }
 
@@ -30,42 +21,17 @@ html{
 a {
     color: black;
     text-decoration: none;
-}
-
-/* HOME */
-
-.bar {
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    top: 0px;
 
 }
-.logo{
-    text-align: start;
-    background-color: black;
-    padding-left: 30px;
-}
-.logoimg{
-    width: 60px;
-    height: 60px;
-    padding-top: 10px;
-}
 
-
-.underlined{
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 3px;
-}
 .navbar {
     background-color: black;
+    position: fixed;
     text-align: end;
     width: 100%;
-    padding-bottom: 5px;
-    padding-top: 5px;
-
+    top: 0px;
+    z-index: 1;
+    padding-bottom: 10px;
 }
 
 nav ul{
@@ -141,37 +107,6 @@ h1 span {
     filter: blur(4px);
     margin-bottom: 20px;
 }
-
-.continue{
-    color: whitesmoke;
-    font-size: 24px;
-    margin-top: 100px;
-    animation: resize 2s linear infinite;
-    
-}
-.continue:hover{
-    animation-play-state: paused;
-}
-
-@keyframes resize{
-    0% {
-        transform: scale(1);
-    }
-    
-    50% {
-        transform: scale(1.4);
-    }
-    
-    100% {
-        transform: scale(1);
-    }
-
-}
-.continue:hover{
-    color: rgb(30, 110, 48);
-    cursor: pointer;
-    animation-duration:0;
-}
   
 span:nth-child(1) {
     animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
@@ -183,9 +118,6 @@ span:nth-child(2) {
 
 span:nth-child(3) {
     animation: fade-in 0.8s 1.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
-}
-span:nth-child(4) {
-    animation: fade-in 0.8s 2.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 @keyframes fade-in {
@@ -216,7 +148,7 @@ h2 {
     font-size: 30px;
     font-style: bolder;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 220px;
     padding-bottom: 40px;
 }
 
@@ -322,7 +254,7 @@ h2 span {
 .proudof{
     font-size: 16px;
     color: whitesmoke;
-    margin-left: 192px;
+    margin-left: 200px;
     margin-bottom: 50px;
 }
 
@@ -370,102 +302,6 @@ figcaption:hover {
     opacity:1 ;
 }
 
-/* SKILLS */
-
-.skills {
-    position: relative;
-    width: 100%;
-    height: 500px;
-}
-
-
-.bombilla{
-    height: 300px;
-    width: auto;
-    position:absolute;
-    bottom: 50px;
-    right: 850px;
-}
-
-.thought1{
-    position: absolute;
-    bottom: 230px;
-    right: 700px;
-}
-.thought2{
-    position: absolute;
-    top: 0;
-    right: 200px;
-}
-
-
-.techno{
-    position: absolute;
-    top: 20px;
-    left: 860px;
-}
-.techno1{
-    position: absolute;
-    top: 55px;
-    left: 830px;
-}
-.techno2{
-    position: absolute;
-    top: 90px;
-    left: 780px;
-}
-.techno3{
-    position: absolute;
-    top: 135px;
-    left: 790px;
-}
-.techno4{
-    position: absolute;
-    top: 170px;
-    left: 810px;
-}
-.techno5{
-    position: absolute;
-    top: 220px;
-    left: 860px;
-}
-.techno6{
-    position: absolute;
-    top: 170px;
-    left: 1000px;
-}
-.techno7{
-    position: absolute;
-    top: 190px;
-    left: 1020px;
-}
-.techno8{
-    position: absolute;
-    top: 40px;
-    left: 1070px;
-}
-.techno9{
-    position: absolute;
-    top: 260px;
-    left: 980px;
-}
-
-
-.big {
-    font-size: 30px;
-    font-weight: 900;
-}
-
-.medium{
-    font-size: 22px;
-    font-weight: 700;
-}
-
-.little{
-    font-size: 16px;
-    font-weight: 500;
-}
-
 
 
 /*CONTACT */
@@ -473,7 +309,6 @@ figcaption:hover {
     display: flex;
     flex-direction: column;
 }
-
 
 .alles{
     display:flex;
@@ -581,7 +416,7 @@ textarea {
 #copyright p{
     border: 1px solid rgb(30, 110, 48);
     text-align: center;
-    margin: 50px 60px 10px 60px;
+    margin: 50px 60px 20px 60px;
     background-color: rgb(30, 110, 48);
 }
 
@@ -592,5 +427,34 @@ textarea {
     font-size: 12px;
     color:whitesmoke;
     text-align: center;
-    align-items: center;
+}
+
+
+
+
+
+
+/*animation js
+@import url("https://fonts.googleapis.com/css?family=Raleway:900&display=swap");
+
+
+#container {
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    color: rgb(56, 119, 56);
+    font-family: "Raleway", sans-serif;
+    font-size: 70px;
+    text-align: center;
+    user-select: none;
 }
