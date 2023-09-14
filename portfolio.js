@@ -1,3 +1,4 @@
+//pure js
 const button1 = document.querySelector('.but1');
 const button2 = document.querySelector('.but2');
 const button3 = document.querySelector('.but3');
